@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath> 
+#include <cmath> // Подключаем библиотеку
 int main() {
     double x1, y1, x2, y2;
     // Ввод координат точки A
@@ -12,7 +12,7 @@ int main() {
     double distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
     // Условный оператор для вывода результата и для проверки, что расстояние не отрицательно
     if (distance >= 0) {
-        std::cout << расстояние между точками A и B: " << distance << std::endl;
+        std::cout << "расстояние между точками A и B: " << distance << std::endl;
     } else {
         std::cout << "ошибка в вычислении расстояния." << std::endl;
     }
