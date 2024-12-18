@@ -1,0 +1,18 @@
+N = int(input("Введите размер матрицы N: "))
+matrix = []
+print("Введите элементы матрицы:")
+for i in range(N):
+    row = list(map(int, input().split()))
+    matrix.append(row)
+
+for i in range(N):
+    for j in range(N):
+        if matrix[i][j] < 0:  
+            # Если есть отрицательный элемент, заменяем всю строку на нули
+            for k in range(N):
+                matrix[i][k] = 0
+            break  
+
+print("Измененная матрица:")
+for row in matrix:
+    print(" ".join(map(str, row)))
